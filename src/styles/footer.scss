@@ -1,0 +1,35 @@
+.footer {
+    .footer-holder {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: 10em auto;
+        padding: 5px 0px 15px 0px;
+
+        .footer-logo {
+            font-size: 35px;
+            color: #2873ff;
+        }
+
+        .office-location {
+            .location {
+                p {
+                    color: #707070;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .contact {
+            line-height: 2.9em;
+
+        }
+
+        .socials {
+            a {
+                color: #000;
+                margin-left: 8px;
+            }
+        }
+    }
+}

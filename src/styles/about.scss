@@ -1,0 +1,28 @@
+.aboutWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 10em auto;
+
+    div {
+        width: 50%;
+    }
+
+    .about-image {
+        img {
+            width: 80%;
+            border-radius: 9px;
+        }
+    }
+
+    .about-content {
+        color: #707070;
+        h2 {
+            padding-bottom: 10px;
+        }
+        p {
+            padding-bottom: 15px;
+        }
+    }
+}
