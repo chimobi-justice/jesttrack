@@ -1,22 +1,24 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
-import '../../styles/login.scss';
-import { textStyles, textColor } from "./styles.login";
-import loginImage from '../../images/company2.jpg'
+import '../../styles/signup.scss';
+import { textStyles, textColor } from "./styles.signup";
+import signupImage from '../../images/company1.jpg'
 
 import ValidateEmail from "../../Validation";
 
 import { Input, Button } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 
-class Login extends Component {
+class Signup extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
+      fullname: "",
       email: "",
       password: "",
       errors: {
+        invalidFullName: "",
         invalidEmail: "",
         invalidPassword: ""
       },
@@ -25,14 +27,24 @@ class Login extends Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleTextChange = this.handleTextChange.bind(this);
-    this._handleLogin = this._handleLogin.bind(this);
+    this._handleSignup = this._handleSignup.bind(this);
   }
 
-  _handleLogin(e) {
+  _handleSignup(e) {
     e.preventDefault();
-    const { email, password } = this.state;
+    const { fullname, email, password } = this.state;
 
-    if (!email && !password) {
+    if (!fullname && !email && !password) {
+      this.setState({
+        errors: {
+          invalidFullName: 'Required',
+          invalidEmail: 'Required',
+          invalidPassword: 'Required'
+        }
+      });
+    }
+
+    else if (fullname && !email && !password) {
       this.setState({
         errors: {
           invalidEmail: 'Required',
@@ -41,18 +53,20 @@ class Login extends Component {
       });
     }
 
-    else if (!email) {
+    else if (email && !fullname && !password) {
       this.setState({
         errors: {
-          invalidEmail: 'Required'
+          invalidFullName: 'Required',
+          invalidPassword: 'Required'
         }
       });
     }
 
-    else if (!password) {
+    else if (password && !fullname && !email) {
       this.setState({
         errors: {
-          invalidPassword: 'Required'
+          invalidFullName: 'Required',
+          invalidEmail: 'Required'
         }
       });
     }
@@ -65,20 +79,50 @@ class Login extends Component {
       });
     }
 
-    else if (email && password) {
+    else if (fullname && email && !password) {
+      this.setState({
+        errors: {
+          invalidPassword: 'Required',
+        }
+      });
+    }
+
+    else if (fullname && !email && password) {
+      this.setState({
+        errors: {
+          invalidEmail: 'Required',
+        }
+      });
+    }
+
+    else if (!fullname && email && password) {
+      this.setState({
+        errors: {
+          invalidFullName: 'Required',
+        }
+      });
+    }
+
+    else if (fullname && email && password) {
       this.setState({
         isLoading: true,
         errors: {
+          invalidFullName: '',
           invalidEmail: '',
           invalidPassword: ''
         }
       });
     }
-
   }
 
   handleChange(e) {
     const { name, value } = e.target;
+
+    if (name === 'fullname') {
+      this.setState({
+        fullname: value
+      })
+    }
 
     if (name === 'email') {
       this.setState({
@@ -95,6 +139,15 @@ class Login extends Component {
 
   handleTextChange(e) {
     const { name, value } = e.target;
+
+    if (name === 'fullname' && value.length > 0) {
+      this.setState({
+        errors: {
+          ...this.state.errors,
+          invalidFullName: ''
+        }
+      });
+    }
 
     if (name === 'email' && value.length > 0) {
       this.setState({
@@ -124,22 +177,36 @@ class Login extends Component {
   }
 
   componentDidMount() {
-    this.__emailInput.focus();
+    this.__fullNameInput.focus();
   }
 
   render() {
     let self = this;
 
     return (
-      <div className="login">
-        <div className="login-wrapper-box">
+      <div className="signup">
+        <div className="signup-wrapper-box">
           <div>
-            <img src={loginImage} alt="" />
+            <img src={signupImage} alt="" />
           </div>
           <div>
-            <form onSubmit={this._handleLogin}>
-              <h2 style={textStyles.emphasis}>Login<span style={textColor}>*</span></h2>
-              <h3 style={textStyles.smallEmpasis}>Welcome Back!</h3>
+            <form onSubmit={this._handleSignup}>
+              <h2 style={textStyles.emphasis}>Sign Up<span style={textColor}>*</span></h2>
+
+              <div>
+                <label>Full Name</label>
+                <Input
+                  type="text"
+                  placeholder="Enter Fullname"
+                  name="fullname"
+                  onChange={this.handleChange}
+                  onKeyUp={this.handleTextChange}
+                  prefix={<UserOutlined />}
+                  ref={
+                    (el) => self.__fullNameInput = el
+                  } />
+                <span style={textStyles.small}>{this.state.errors.invalidFullName}</span>
+              </div>
 
               <div>
                 <label>Email</label>
@@ -173,10 +240,10 @@ class Login extends Component {
               </div>
 
               <div>
-                <Button type="primary" htmlType="submit" loading={this.state.isLoading}>Login</Button>
+                <Button type="primary" htmlType="submit" loading={this.state.isLoading}>Sign up</Button>
               </div>
 
-              <p>Don't have an account <Link to="/register" style={textColor}>Sign up</Link></p>
+              <p>Already have an account <Link to="/login" style={textColor}>log in</Link></p>
 
             </form>
           </div>
@@ -186,4 +253,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default Signup;
