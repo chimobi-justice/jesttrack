@@ -1,10 +1,10 @@
 import { Component } from "react";
-import NavBar from "../../components/NavBar";
-import HeroSection from "../../components/herosection";
-import About from "../../components/about";
-import Service from "../../components/service";
-import Company from "../../components/company";
-import Footer from "../../components/footer";
+import NavBar from "../../NavBar";
+import HeroSection from "../../herosection";
+import About from "../../about";
+import Service from "../../service";
+import Company from "../../company";
+import Footer from "../../footer";
 
 class Home extends Component {
   render() {

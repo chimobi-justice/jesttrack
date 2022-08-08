@@ -1,53 +1,53 @@
 .company {
-    align-items: center;
+  align-items: center;
 
-    .life-at-company-content {
-        width: 50%;
-        margin: 0px auto;
-        padding: 35px 0px 35px 0px;
-        text-align: center;
+  .life-at-company-content {
+    width: 50%;
+    margin: 0px auto;
+    padding: 35px 0px 35px 0px;
+    text-align: center;
 
-        p {
-            color: #707070;
-            font-size: 14px;
-        }
+    p {
+      color: #707070;
+      font-size: 14px;
+    }
+  }
+
+  .company-text-image {
+    div {
+      line-height: 1.5em;
+      margin-bottom: 10px;
+
+      p {
+        padding-bottom: 20px;
+      }
+
+      img {
+        width: 435px;
+        border-radius: 9px;
+      }
+    }
+  }
+
+  .life-at-company-sections {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0px auto;
+
+    div {
+      width: 50%;
     }
 
-    .company-text-image {
-        div {
-            line-height: 1.5em;
-            margin-bottom: 10px;
+    .company-images {
+      // display: flex;
+      // justify-content: space-around;
+      // margin: 0px auto;
 
-            p {
-                padding-bottom: 20px;
-            }
-
-            img {
-                width: 435px;
-                border-radius: 9px;
-            }
-        }
+      .com-img {
+        width: 100%;
+        height: 200px;
+      }
     }
-
-    .life-at-company-sections {
-        display: flex;
-        justify-content: space-around;
-        width: 70%;
-        margin: 0px auto;
-
-        div {
-            width: 50%;
-        }
-
-        .company-images {
-            // display: flex;
-            // justify-content: space-around;
-            // margin: 0px auto;
-
-            .com-img {
-                width: 100%;
-                height: 200px;
-            }
-        }
-    }
+  }
 }

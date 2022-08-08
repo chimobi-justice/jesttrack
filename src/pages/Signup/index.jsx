@@ -71,6 +71,22 @@ class Signup extends Component {
       });
     }
 
+    else if (!ValidateEmail(email) && fullname && !password) {
+      this.setState({
+        errors: {
+          invalidPassword: 'Required',
+        }
+      });
+    }
+
+    else if (!ValidateEmail(email) && !fullname && password) {
+      this.setState({
+        errors: {
+          invalidFullName: 'Required',
+        }
+      });
+    }
+
     else if (email.length > 0 && !ValidateEmail(email)) {
       this.setState({
         errors: {
