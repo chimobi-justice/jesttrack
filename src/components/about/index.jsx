@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import '../../../styles/about.scss';
-import about from '../../../images/about.jpg';
+import '../../styles/about.scss';
+import about from '../../images/about.jpg';
 
 class About extends Component {
     render() {
         return (
-            <div className="aboutWrapper">
+            <div className="aboutWrapper" id="about">
                 <div className="about-image">
                     <img src={about} alt="" />
                 </div>

@@ -1,33 +1,35 @@
 .heroWrapper {
+  align-items: center;
+  background: #2873ff;
+  height: 400px;
+  width: 100%;
+
+  .heroHolder {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    background: #2873ff;
-    height: 400px;
-    width: 100%;
+    width: 80%;
+    margin: 0px auto;
 
-    .heroHolder {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 80%;
-        margin: 0px auto;
-
-        div {
-            width: 50%;
-        }
-
-        .heroContent {
-            line-height: 2.7em;
-
-            h2, p {
-                color: #fff;
-                font-size: 1.3em;
-            }
-        }
-
-        .heroImage {
-            img {
-                width: 115%;
-            }
-        }
+    div {
+      width: 50%;
     }
+
+    .heroContent {
+      line-height: 2.7em;
+      h2{
+        font-size: 2.3em;
+      }
+      h2,
+      p {
+        color: #fff;
+      }
+    }
+
+    .heroImage {
+      img {
+        width: 115%;
+      }
+    }
+  }
 }

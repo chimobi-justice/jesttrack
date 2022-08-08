@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import '../../../styles/company.scss';
-import company1 from '../../../images/company1.jpg';
-import company2 from '../../../images/company2.jpg';
-import company5 from '../../../images/company5.jpg';
+import '../../styles/company.scss';
+import company1 from '../../images/company1.jpg';
+import company2 from '../../images/company2.jpg';
+import company5 from '../../images/company5.jpg';
 
 import { Row, Col } from 'antd';
 
@@ -11,7 +11,7 @@ import { Row, Col } from 'antd';
 class Company extends Component {
     render() {
         return (
-            <div className="company">
+            <div className="company" id="company">
                 <div className="life-at-company-content">
                     <h2>Life At Our Company</h2>
                     <h3>Lorem ipsum dolor sit, amet consectetur adipisicing

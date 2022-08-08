@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import '../../../styles/service.scss';
-import support from '../../../images/support.png';
-import customerService from '../../../images/customer-service.png';
-import location from '../../../images/location.png';
-import hour from '../../../images/24-hours.png';
-import imb from '../../../images/ibm.png';
-import google from '../../../images/google.png';
-import handshake from '../../../images/handshake.png';
-import investor from '../../../images/investor.png';
+import '../../styles/service.scss';
+import support from '../../images/support.png';
+import customerService from '../../images/customer-service.png';
+import location from '../../images/location.png';
+import hour from '../../images/24-hours.png';
+import imb from '../../images/ibm.png';
+import google from '../../images/google.png';
+import handshake from '../../images/handshake.png';
+import investor from '../../images/investor.png';
 
 
 
@@ -15,7 +15,7 @@ class Service extends Component {
     render() {
         return (
             <>
-            <div className="service-top">
+            <div className="service-top" id="service">
                 <div className="service-content">
                     <h2>service</h2>
                     <h3>Lorem ipsum dolor sit, amet consectetur adipisicing

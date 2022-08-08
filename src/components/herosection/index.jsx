@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import '../../../styles/heroSection.scss';
-import hero1 from '../../../images/hero1.svg';
-import hero2 from '../../../images/hero2.svg';
-import hero3 from '../../../images/hero3.svg';
-import hero4 from '../../../images/hero4.svg';
+import '../../styles/heroSection.scss';
+import hero1 from '../../images/hero1.svg';
+import hero2 from '../../images/hero2.svg';
+import hero3 from '../../images/hero3.svg';
+import hero4 from '../../images/hero4.svg';
 
-import { Button } from 'antd';
-import { Carousel } from 'antd';
+import { Button, Carousel } from 'antd';
 import { ArrowRightOutlined } from "@ant-design/icons";
 
 
