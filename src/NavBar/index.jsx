@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import '../../styles/navbar.scss';
+import '../styles/navbar.scss';
 import { Link } from 'react-router-dom';
 import { Button } from 'antd';
 

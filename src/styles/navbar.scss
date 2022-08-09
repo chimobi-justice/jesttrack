@@ -1,45 +1,45 @@
 header {
-    background: #d8e8ff;
+  background: #d8e8ff;
+  align-items: center;
+
+  .navbar {
+    width: 80%;
+    margin: 0px auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 
-    .navbar {
-        width: 80%;
-        margin: 0px auto;
-        padding: 5px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .nav-logo {
-            font-size: 35px;
-            color: #2873ff;
-        }
-
-        ul {
-            display: inline-flex;
-
-            li {
-                list-style: none;
-            }
-
-            .listItem {
-                margin-left: 3em;
-
-                a {
-                    color: #2873ff;
-                    text-decoration: none;
-                    display: inline-block;
-
-                    &:hover {
-                        color: #5691ff;
-                    }
-                }
-            }
-        }
-
+    .nav-logo {
+      font-size: 35px;
+      color: #2873ff;
     }
 
-    .active {
-        color: red;
+    ul {
+      display: inline-flex;
+
+      li {
+        list-style: none;
+      }
+
+      .listItem {
+        margin-left: 3em;
+
+        a {
+          color: #2873ff;
+          text-decoration: none;
+          display: inline-block;
+
+          &:hover {
+            color: #5691ff;
+          }
+        }
+      }
     }
+
+  }
+
+  .active {
+    color: red;
+  }
 }
