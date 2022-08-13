@@ -1,0 +1,41 @@
+.asset-operation {
+    width: 70%;
+    margin: 30px auto;
+  
+    #flex-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .asset-operation-wrapper {
+      margin-bottom: 10px;
+  
+      .asset-operation-wrapper-box {
+        background: #ffffff;
+        margin-right: 15px;
+        padding: 10px;
+        line-height: 1.7em;
+  
+        img {
+          width: 125px;
+          height: 79px;
+        }
+  
+        h4,
+        p {
+          text-align: left;
+        }
+  
+        a {
+          float: left;
+          text-decoration: underline;
+        }
+  
+        p {
+          color: #707070;
+          font-size: 11px;
+        }
+      }
+    }
+  }

@@ -1,0 +1,38 @@
+.assets {
+  text-align: center;
+  padding: 35px 0px 35px 0px;
+  background: #f6f8ff;
+
+  .assets-content {
+    width: 50%;
+    margin: 0px auto;
+    padding: 25px 0px 25px 0px;
+
+    p {
+      color: #707070;
+      font-size: 14px;
+    }
+  }
+
+  .assets-path {
+    width: 70%;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+
+    .assets-path-box {
+      padding: 7px;
+      cursor: pointer;
+
+      img {
+        width: 125px;
+        height: 79px;
+      }
+
+      h4 {
+        color: #707070;
+        font-size: 12px;
+      }
+    }
+  }
+}

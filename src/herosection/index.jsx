@@ -16,11 +16,9 @@ class HeroSection extends Component {
         <div className="heroWrapper">
           <div className="heroHolder">
             <div className="heroContent">
-              <h2>Lorem ipsum dolor sit, amet consectetur
-                adipisicing elit.
+              <h2>Start your career with us
               </h2>
-              <p>Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Porro inventore atque quam.</p>
+              <p>Be Part Of The Largest Transaction Network In Nigeria</p>
               <Button type="default" className="heroContent-btn">Learn More <ArrowRightOutlined /></Button>
             </div>
             <div className="heroImage">
@@ -31,12 +29,10 @@ class HeroSection extends Component {
         <div className="heroWrapper">
           <div className="heroHolder">
             <div className="heroContent">
-              <h2>Lorem ipsum dolor sit, amet consectetur
-                adipisicing elit.
+              <h2>Start your career with us
               </h2>
-              <p>Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Porro inventore atque quam</p>
-              <Button type="default">Learn More <ArrowRightOutlined /></Button>
+              <p>Be Part Of The Largest Transaction Network In Nigeria</p>
+              <Button type="default" className="heroContent-btn">Learn More <ArrowRightOutlined /></Button>
             </div>
             <div className="heroImage">
               <img src={hero2} alt="" />
@@ -46,12 +42,10 @@ class HeroSection extends Component {
         <div className="heroWrapper">
           <div className="heroHolder">
             <div className="heroContent">
-              <h2>Lorem ipsum dolor sit, amet consectetur
-                adipisicing elit.
+              <h2>Start your career with us
               </h2>
-              <p>Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Porro inventore atque quam</p>
-              <Button type="default">Learn More <ArrowRightOutlined /></Button>
+              <p>Be Part Of The Largest Transaction Network In Nigeria</p>
+              <Button type="default" className="heroContent-btn">Learn More <ArrowRightOutlined /></Button>
             </div>
             <div className="heroImage">
               <img src={hero3} alt="" />
@@ -61,12 +55,10 @@ class HeroSection extends Component {
         <div className="heroWrapper">
           <div className="heroHolder">
             <div className="heroContent">
-              <h2>Lorem ipsum dolor sit, amet consectetur
-                adipisicing elit
+              <h2>Start your career with us
               </h2>
-              <p>Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Porro inventore atque quam</p>
-              <Button type="default">Learn More <ArrowRightOutlined /></Button>
+              <p>Be Part Of The Largest Transaction Network In Nigeria</p>
+              <Button type="default" className="heroContent-btn">Learn More <ArrowRightOutlined /></Button>
             </div>
             <div className="heroImage">
               <img src={hero4} alt="" />
