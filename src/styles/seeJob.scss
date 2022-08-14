@@ -1,0 +1,43 @@
+.seeJobs {
+  text-align: center;
+  padding: 35px 0px 35px 0px;
+  background: #f6f8ff;
+
+  .seeJobs-content {
+    width: 50%;
+    margin: 0px auto;
+    padding: 25px 0px 25px 0px;
+
+    p {
+      color: #707070;
+      font-size: 14px;
+    }
+  }
+
+  .seeJobs-path {
+    width: 70%;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+
+    .seeJobs-path-box {
+      padding: 7px;
+      margin: 8px;
+      cursor: pointer;
+      background: #fff;
+
+      &:hover {
+        background: #f1f1f1;
+      }
+
+      img {
+        width: 60px;
+      }
+
+      p.career-path-text {
+        color: #707070;
+        font-size: 12px;
+      }
+    }
+  }
+}
