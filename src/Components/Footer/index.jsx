@@ -39,24 +39,12 @@ class Footer extends Component {
             <p><MailFilled /> Jesttract@email.com</p>
           </div>
           <div className="socials">
-            <a href="">
-              <FacebookFilled />
-            </a>
-            <a href="">
-              <TwitterCircleFilled />
-            </a>
-            <a href="">
-              <LinkedinFilled />
-            </a>
-            <a href="">
-              <MailFilled />
-            </a>
-            <a href="">
-              <InstagramFilled />
-            </a>
-            <a href="">
-              <GoogleCircleFilled />
-            </a>
+            <a href=""><FacebookFilled /></a>
+            <a href=""><TwitterCircleFilled /></a>
+            <a href=""><LinkedinFilled /></a>
+            <a href=""><MailFilled /></a>
+            <a href=""><InstagramFilled /></a>
+            <a href=""><GoogleCircleFilled /></a>
           </div>
         </div>
       </div>

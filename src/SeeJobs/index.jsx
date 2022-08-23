@@ -3,18 +3,15 @@ import '../styles/seeJob.scss';
 import { Link } from 'react-router-dom';
 
 import { Row, Col, Button } from 'antd';
-import { ArrowLeftOutlined } from '@ant-design/icons';
-import { returnButton } from "../backButton/backButton.styles";
 import { SeeAllJobs } from '../Constant/SeeAllJobs';
 import { Truncate } from '../helper/truncate';
+import ButtonReturn from '../Components/ButtonReturn';
 
 class SeeJobs extends Component {
   render() {
     return (
       <>
-        <div style={returnButton}>
-          <Link to="/"><Button type='primary'><ArrowLeftOutlined /> return</Button></Link>
-        </div>
+        <Link to="/"><ButtonReturn /></Link>
         <div className="seeJobs" id="seeJobs">
           <div className="seeJobs-content">
             <h2>Find your Dream Career</h2>

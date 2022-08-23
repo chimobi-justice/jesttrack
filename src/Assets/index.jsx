@@ -3,8 +3,7 @@ import '../styles/assets.scss';
 import { Link } from 'react-router-dom';
 
 import { Row, Col, Button } from 'antd';
-import { ArrowLeftOutlined } from "@ant-design/icons";
-import { returnButton } from "../backButton/backButton.styles";
+import ButtonReturn from "../Components/ButtonReturn";
 import { Assets } from "../Constant/Assets";
 import HR from "./HR";
 import Operation from "./Operation";
@@ -32,9 +31,7 @@ class PageAssets extends Component {
   render() {
     return (
       <>
-        <div style={returnButton}>
-          <Link to="/"><Button type='primary'><ArrowLeftOutlined /> return</Button></Link>
-        </div>
+        <Link to="/"><ButtonReturn /></Link>
         <div className="assets" id="assets">
           <div className="assets-content">
             <h2>Find your Dream Career</h2>
