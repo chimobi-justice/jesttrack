@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { Link } from "react-router-dom";
 
-import '../../../../styles/HR_SUPERVISOR.scss';
+import '../../../../styles/HR/HR_SUPERVISOR.scss';
 
 import NavBar from "../../../../Components/NavBar";
 import Footer from "../../../../Components/Footer";
@@ -26,7 +26,7 @@ class HRSupervisor extends Component {
     return (
       <>
         <NavBar />
-        <Link to="/assets"><ButtonReturn /></Link>
+        <Link to="/assets?tab=hr"><ButtonReturn /></Link>
 
         <div className="asset-hr-supervisor">
           <Row className="asset-hr-supervisor-vacancy-title" justify="space-between">

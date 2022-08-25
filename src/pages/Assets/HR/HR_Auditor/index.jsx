@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { Link } from "react-router-dom";
 
-import '../../../../styles/HR_AUDITOR.scss';
+import '../../../../styles/HR/HR_AUDITOR.scss';
 
 import NavBar from "../../../../Components/NavBar";
 import Footer from "../../../../Components/Footer";
@@ -26,7 +26,7 @@ class HrAuditor extends Component {
     return (
       <>
         <NavBar />
-        <Link to="/assets"><ButtonReturn /></Link>
+        <Link to="/assets?tab=hr"><ButtonReturn /></Link>
 
         <div className="asset-hr-auditor">
           <Row className="asset-hr-auditor-vacancy-title" justify="space-between">
@@ -97,7 +97,7 @@ class HrAuditor extends Component {
                 <div>
                   <h4>HR Supervisor</h4>
                   <p>HR Generalist, HR Admin, Supervisor, Hiring Partner...</p>
-                  <Link to='assets/HR-supervisor'>Click <ArrowRightOutlined /></Link>
+                  <Link to='/assets/HR-supervisor'>Click <ArrowRightOutlined /></Link>
                 </div>
               </div>
 
@@ -108,7 +108,7 @@ class HrAuditor extends Component {
                 <div>
                   <h4>Human Resources</h4>
                   <p>HR Generalist, HR Admin, Supervisor, Hiring Partner...</p>
-                  <Link to='assets/HR'>Click <ArrowRightOutlined /></Link>
+                  <Link to='/assets/HR'>Click <ArrowRightOutlined /></Link>
                 </div>
               </div>
 

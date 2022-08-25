@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import '../../styles/navbar.scss';
 import { Link } from 'react-router-dom';
 import { Button } from 'antd';

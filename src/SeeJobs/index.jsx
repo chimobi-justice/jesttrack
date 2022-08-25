@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../styles/seeJob.scss';
 import { Link } from 'react-router-dom';
 
-import { Row, Col, Button } from 'antd';
+import { Row, Col } from 'antd';
 import { SeeAllJobs } from '../Constant/SeeAllJobs';
 import { Truncate } from '../helper/truncate';
 import ButtonReturn from '../Components/ButtonReturn';
@@ -29,7 +29,7 @@ class SeeJobs extends Component {
                 <Col span={4} className="seeJobs-path-box">
                   <img src={seeJob.assetImage} alt={seeJob.assetHeading} />
                   <h4>{seeJob.assetHeading}</h4>
-                  <p className='seeJobs-path-text'>{ Truncate(seeJob.assetText)}</p>
+                  <p className='seeJobs-path-text'>{ Truncate(seeJob.assetText, 17)}</p>
                 </Col>
               ))
             }

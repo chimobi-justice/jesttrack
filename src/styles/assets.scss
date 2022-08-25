@@ -20,19 +20,23 @@
     padding: 20px 0px 20px 0px;
     text-align: center;
 
-    .assets-path-box {
-      padding: 7px;
-      cursor: pointer;
-
-      img {
-        width: 125px;
-        height: 79px;
+    a {
+      .assets-path-box {
+        padding: 7px;
+        cursor: pointer;
+  
+        img {
+          width: 125px;
+          height: 79px;
+        }
+  
+        h4 {
+          color: #707070;
+          font-size: 12px;
+        }
       }
 
-      h4 {
-        color: #707070;
-        font-size: 12px;
-      }
     }
+
   }
 }

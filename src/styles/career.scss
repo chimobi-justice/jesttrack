@@ -20,25 +20,31 @@
     padding: 20px 0px 20px 0px;
     text-align: center;
 
-    .career-path-box {
-      background: #fff;
-      padding: 7px;
-      cursor: pointer;
+    a {
+      .career-path-box {
+        padding: 7px;
+        cursor: pointer;
+        background: #fff;
 
-      &:hover {
-        background: #f1f1ff;
+        img {
+          width: 125px;
+          height: 79px;
+        }
+
+        h4 {
+          color: #707070;
+          font-size: 12px;
+        }
+
+        p.career-path-text {
+          color: #707070;
+          font-size: 12px;
+        }
       }
 
-      img {
-        width: 60px;
-      }
-
-      p.career-path-text {
-        color: #707070;
-        font-size: 12px;
-      }
     }
   }
+
   .see-all-btn {
     margin-bottom: 15px;
   }

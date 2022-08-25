@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import '../styles/heroSection.scss';
 import hero1 from '../images/hero1.svg';
 import hero2 from '../images/hero2.svg';

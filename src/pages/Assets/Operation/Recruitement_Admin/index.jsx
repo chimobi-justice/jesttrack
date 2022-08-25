@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
 
-import '../../../../styles/HR/HR_PAYROLLADMIN.scss';
+import '../../../../styles/OPERATION/OPERATION_RECRUITEMENTADMIN.scss';
 
 import NavBar from "../../../../Components/NavBar";
 import Footer from "../../../../Components/Footer";
@@ -21,30 +21,30 @@ import {
 
 import testImg from '../../../../images/HR.svg'
 
-class HrPayrollAdmin extends Component {
+class OperationRecruitementAdmin extends Component {
   render() {
     return (
       <>
         <NavBar />
-        <Link to="/assets?tab=hr"><ButtonReturn /></Link>
+        <Link to="/assets?tab=operation"><ButtonReturn /></Link>
 
-        <div className="asset-hr-PayrollAdmin">
-          <Row className="asset-hr-PayrollAdmin-vacancy-title" justify="space-between">
+        <div className="asset-Operation-RecruitementAdmin">
+          <Row className="asset-Operation-RecruitementAdmin-vacancy-title" justify="space-between">
             <Col><h3 className="other-vacancy-text-left">Vacancy Detail</h3></Col>
             <Col><h3 className="other-vacancy-text-right">Other Vacancies in this division</h3></Col>
           </Row>
 
-          <Row className="asset-hr-PayrollAdmin-wrapper" justify="space-between">
-            <Col span={18} className="asset-hr-PayrollAdmin-Box-left">
-              <div className="assets-hr-PayrollAdmin-info-top">
+          <Row className="asset-Operation-RecruitementAdmin-wrapper" justify="space-between">
+            <Col span={18} className="asset-Operation-RecruitementAdmin-Box-left">
+              <div className="assets-Operation-RecruitementAdmin-info-top">
                 <Row justify="space-between">
                   <Col>
                     <img src={testImg} alt="" />
                   </Col>
                   <Col>
-                    <h3>Payroll Admin</h3>
-                    <p>Payroll Admin Devision</p>
-                    <div className="assets-hr-PayrollAdmin-info-socials">
+                    <h3>Recruitment Admin</h3>
+                    <p>Recruitment Admin Devision</p>
+                    <div className="assets-Operation-RecruitementAdmin-info-socials">
                       <a href=""><FacebookFilled /></a>
                       <a href=""><TwitterCircleFilled /></a>
                       <a href=""><LinkedinFilled /></a>
@@ -89,37 +89,37 @@ class HrPayrollAdmin extends Component {
                 <p>Bachelor degree preferred.</p>
               </div>
             </Col>
-            <Col span={5} className="asset-hr-PayrollAdmin-Box-right">
-              <div className="asset-hr-PayrollAdmin-Box-right-container">
+            <Col span={5} className="asset-Operation-RecruitementAdmin-Box-right">
+              <div className="asset-Operation-RecruitementAdmin-Box-right-container">
                 <div>
                   <img src={testImg} />
                 </div>
                 <div>
-                  <h4>HR Auditor</h4>
-                  <p>HR Generalist, HR Admin, Supervisor, Hiring Partner...</p>
-                  <Link to='/assets/HR-auditor'>Click <ArrowRightOutlined /></Link>
+                  <h4>Operation</h4>
+                  <p>Operation Generalist, Operation Admin, Supervisor, Hiring Partner...</p>
+                  <Link to='/assets/OPERATION'>Click <ArrowRightOutlined /></Link>
                 </div>
               </div>
 
-              <div className="asset-hr-PayrollAdmin-Box-right-container">
+              <div className="asset-Operation-RecruitementAdmin-Box-right-container">
+                <div>
+                  <img src={testImg} />
+                </div>
+                <div>
+                  <h4>Payrol Admin</h4>
+                  <p>Operation Generalist, Operation Admin, Supervisor, Hiring Partner...</p>
+                  <Link to='/assets/OPERATION-payroll-admin'>Click <ArrowRightOutlined /></Link>
+                </div>
+              </div>
+
+              <div className="asset-Operation-RecruitementAdmin-Box-right-container">
                 <div>
                   <img src={testImg} />
                 </div>
                 <div>
                   <h4>HR Supervisor</h4>
                   <p>HR Generalist, HR Admin, Supervisor, Hiring Partner...</p>
-                  <Link to='/assets/HR-supervisor'>Click <ArrowRightOutlined /></Link>
-                </div>
-              </div>
-
-              <div className="asset-hr-PayrollAdmin-Box-right-container">
-                <div>
-                  <img src={testImg} />
-                </div>
-                <div>
-                  <h4>Human Resources</h4>
-                  <p>HR Generalist, HR Admin, Supervisor, Hiring Partner...</p>
-                  <Link to='/assets/HR'>Click <ArrowRightOutlined /></Link>
+                  <Link to='/assets/OPERATION-supervisor'>Click <ArrowRightOutlined /></Link>
                 </div>
               </div>
             </Col>
@@ -131,4 +131,4 @@ class HrPayrollAdmin extends Component {
   }
 }
 
-export default HrPayrollAdmin;
+export default OperationRecruitementAdmin;

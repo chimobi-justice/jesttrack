@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import NavBar from "../../Components/NavBar";
 import PageAssets from "../../Assets";
 import Footer from "../../Components/Footer";
