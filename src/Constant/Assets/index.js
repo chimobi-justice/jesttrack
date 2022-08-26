@@ -8,26 +8,31 @@ export const Assets = [
   {
     'id': 1,
     'assetImage': HR,
-    'assetText': 'Human Resources'
+    'assetText': 'Human Resources',
+    'link': 'hr'
   },
   {
     'id': 2,
     'assetImage': Operation,
-    'assetText': 'Operation'
+    'assetText': 'Operation',
+    'link': 'operation'
   }, 
   {
     'id': 3,
     'assetImage': Finance,
-    'assetText': 'Finance'
+    'assetText': 'Finance',
+    'link': 'finance'
   }, 
   {
     'id': 4,
     'assetImage': HR,
-    'assetText': 'Genaral Affairs'
+    'assetText': 'Genaral Affairs',
+    'link': 'genaral-affairs'
   },
   {
     'id':5,
     'assetImage': Legal,
-    'assetText': 'Legal'
+    'assetText': 'Legal',
+    'link': 'legal'
   },
 ];

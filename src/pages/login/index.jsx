@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { Link } from 'react-router-dom';
 import '../../styles/login.scss';
 import { textStyles, textColor } from "./styles.login";
@@ -7,7 +7,7 @@ import loginImage from '../../images/company2.jpg'
 import ValidateEmail from "../../Validation";
 
 import { Input, Button } from 'antd';
-import { UserOutlined } from '@ant-design/icons';
+import { TrademarkCircleFilled, UserOutlined } from '@ant-design/icons';
 
 class Login extends Component {
   constructor(props) {
@@ -151,7 +151,7 @@ class Login extends Component {
                   onKeyUp={this.handleTextChange}
                   prefix={<UserOutlined />}
                   ref={
-                    (el) => self.__emailInput = el
+                    (el) => self.__emailInput =  el
                   } />
                 <span style={textStyles.small}>{this.state.errors.invalidEmail}</span>
               </div>

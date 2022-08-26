@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { Link } from "react-router-dom";
 
-import '../../../../styles/HR_HUMANRESOURCE.scss';
+import '../../../../styles/HR/HR_HUMANRESOURCE.scss';
 
 import NavBar from "../../../../Components/NavBar";
 import Footer from "../../../../Components/Footer";
@@ -26,7 +26,7 @@ class HRHumanResource extends Component {
     return (
       <>
         <NavBar />
-        <Link to="/assets"><ButtonReturn /></Link>
+        <Link to="/assets?tab=hr"><ButtonReturn /></Link>
 
         <div className="asset-hr-HumanResource">
           <Row className="asset-hr-HumanResource-vacancy-title" justify="space-between">
@@ -42,7 +42,7 @@ class HRHumanResource extends Component {
                     <img src={testImg} alt="" />
                   </Col>
                   <Col>
-                    <h3>Human Resources Department Head</h3>
+                    <h3>Human Resources</h3>
                     <p>Human Resources Devision</p>
                     <div className="assets-hr-HumanResource-info-socials">
                       <a href=""><FacebookFilled /></a>
@@ -119,7 +119,7 @@ class HRHumanResource extends Component {
                 <div>
                   <h4>HR Auditor</h4>
                   <p>HR Generalist, HR Admin, Supervisor, Hiring Partner...</p>
-                  <Link to='//assets/HR-auditor'>Click <ArrowRightOutlined /></Link>
+                  <Link to='/assets/HR-auditor'>Click <ArrowRightOutlined /></Link>
                 </div>
               </div>
             </Col>

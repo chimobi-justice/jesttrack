@@ -174,29 +174,29 @@ class Home extends Component {
 
           <Row className="career-path" justify="space-between">
             {
+
               Careers.map((career) => (
-                <Col
-                  key={career.id}
-                  span={4}
-                  className="career-path-box"
-                >
-                  <img src={career.assetImage} alt={career.assetHeading} />
-                  <h4>Human Resources</h4>
-                  <p className="career-path-text">{Truncate(career.assetText)}</p>
-                </Col>
+                <Link to={career.link} key={career.id}>
+                  <Col
+                    className="career-path-box"
+                  >
+                    <img src={career.assetImage} alt={career.assetText} />
+                    <h4>{career.assetHeading}</h4>
+                    <p className="career-path-text">{Truncate(career.assetText, 17)}</p>
+                  </Col>
+                </Link>
               ))
             }
           </Row>
 
           <div className="see-all-btn">
-            <Link to="/see-all-jobs"><Button type="primary">See all jobs <ArrowRightOutlined /></Button></Link>
+            <Link to="/assets/see-all-jobs"><Button type="primary">See all jobs <ArrowRightOutlined /></Button></Link>
           </div>
 
         </div>
 
         <Footer />
       </>
-
     );
   }
 }

@@ -1,0 +1,95 @@
+.asset-Operation {
+    background: #f6f8ff;
+    padding: 15px 0px 15px 0px;
+  
+    p {
+      color: #707070;
+      font-size: 13px;
+      line-height: 1.6em;
+    }
+  
+    h3 {
+      font-weight: 700;
+    }
+  
+    h4 {
+      font-weight: 600;
+    }
+  
+    .asset-Operation-vacancy-title {
+      width: 80%;
+      margin: 10px auto;
+  
+      .other-vacancy-text-right {
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+  
+    .asset-Operation-wrapper {
+      width: 80%;
+      margin: 0px auto;
+  
+      .asset-Operation-Box-left {
+        background: #fff;
+        padding: 25px 15px;
+        height: auto;
+  
+        .text-content {
+          margin-bottom: 8px;
+        }
+  
+        .assets-Operation-info-top {
+          display: flex;
+          justify-content: space-between;
+  
+          img {
+            width: 125px;
+            height: 79px;
+          }
+  
+          h3,
+          p {
+            text-align: left;
+          }
+  
+          a {
+            float: left;
+            text-decoration: underline;
+          }
+  
+          p {
+            color: #707070;
+            font-size: 11px;
+          }
+        }
+  
+        .assets-Operation-info-socials {
+          a {
+            color: rgb(195 195 198 / 1);
+            margin-left: 4px;
+          }
+        }
+      }
+  
+      .asset-Operation-Box-right {
+        height: auto;
+  
+  
+        .asset-Operation-Box-right-container {
+          background: #fff;
+          border-radius: 3px;
+          text-align: center;
+          padding: 10px;
+          margin: 15px 0px 15px 0px;
+  
+          div {
+            img {
+              width: 120px;
+              height: 79px;
+            }
+          }
+        }
+      }
+    }
+  }

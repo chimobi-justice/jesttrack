@@ -1,8 +1,9 @@
 import { Component } from "react";
 import '../styles/assets.scss';
 import { Link } from 'react-router-dom';
+import { withRouter } from "../HOC";
 
-import { Row, Col, Button } from 'antd';
+import { Row, Col } from 'antd';
 import ButtonReturn from "../Components/ButtonReturn";
 import { Assets } from "../Constant/Assets";
 import HR from "./HR";
@@ -17,6 +18,7 @@ class PageAssets extends Component {
 
     this.state = {
       tabNumber: 1,
+      urlParam: ''
     }
 
     this.handleTab = this.handleTab.bind(this);
@@ -26,6 +28,38 @@ class PageAssets extends Component {
     this.setState({
       tabNumber: id
     });
+  }
+
+  componentDidMount() {
+    let urlParam = new URLSearchParams(window.location.search);
+
+    if (urlParam) {
+      this.setState({
+        urlParam: urlParam.get('tab')
+      });
+    }
+
+    switch (urlParam.get('tab')) {
+      case 'hr':
+        this.setState({ tabNumber: 1 });
+        break;
+
+      case 'operation':
+        this.setState({ tabNumber: 2 });
+        break;
+
+      case 'finance':
+        this.setState({ tabNumber: 3 });
+        break;
+
+      case 'general-affairs':
+        this.setState({ tabNumber: 4 });
+        break;
+
+      case 'legal':
+        this.setState({ tabNumber: 5 });
+        break;
+    }
   }
 
   render() {
@@ -45,23 +79,26 @@ class PageAssets extends Component {
 
           <Row className="assets-path" justify="space-between">
             {
+
               Assets.map((asset) => (
-                <Col
-                  key={asset.id}
-                  className="assets-path-box"
-                  onClick={
-                    () => this.handleTab(asset.id)
-                  }>
-                  <img src={asset.assetImage} alt={asset.assetText} />
-                  <h4 style={
-                    {
-                      color: asset.id === this.state.tabNumber && '#2873ff',
-                      textDecoration: asset.id === this.state.tabNumber && 'underline'
-                    }
-                  }>
-                    {asset.assetText}
-                  </h4>
-                </Col>
+                <Link to={`/assets?tab=${(asset.link)}`} key={asset.id}>
+                  <Col
+                    className="assets-path-box"
+                    onClick={() => {
+                      this.handleTab(asset.id)
+                    }}
+                  >
+                    <img src={asset.assetImage} alt={asset.assetText} />
+                    <h4 style={
+                      {
+                        color: asset.id === this.state.tabNumber && '#2873ff',
+                        textDecoration: asset.id === this.state.tabNumber && 'underline'
+                      }
+                    }>
+                      {asset.assetText}
+                    </h4>
+                  </Col>
+                </Link>
               ))
             }
           </Row>
@@ -83,4 +120,4 @@ class PageAssets extends Component {
   }
 }
 
-export default PageAssets;
+export default withRouter(PageAssets);
